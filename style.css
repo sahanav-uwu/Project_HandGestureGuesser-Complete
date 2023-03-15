@@ -1,0 +1,29 @@
+body
+{
+  color: white;
+  background-color: cadetblue;
+}
+span
+{
+  font-size: 30px;
+}
+#camera, #result
+{
+  border: 10px ;
+  border-style: double;
+  width: 350px;
+  height: 300px; 
+}
+
+
+#Emotion_Name-1 , #Emotion_Name-2 
+{
+  color: black;
+}
+
+.heading
+{
+  font-size: 18px;
+  border-radius: 10px;
+  letter-spacing: 10px;
+}

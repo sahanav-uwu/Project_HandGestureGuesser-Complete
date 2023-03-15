@@ -1,0 +1,63 @@
+ 
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+
+      <h1 class="btn heading">Hand Gesture Guesser
+        <br>
+        <span> <h1>✌ 🤞 👌 👍 ✌</h1></span>
+        <span></span>
+      </h1>
+
+      <br><br>
+
+      <p style="font-size: 50px;">
+      <h2 style="color: gold; font-family:'Courier New', Courier, monospace">This App Uses the</h2> 
+      🤙(pinky) |👉(finger gun) |👌(superb) | 3️⃣ (three fingers)
+      <h2 style="color: gold; font-family:'Courier New', Courier, monospace">Hand Gestures</h2>
+
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+	      <label>Camera</label>
+        <div id="camera"></div>
+        <br><br>
+        <button class="btn btn-info" onclick="takeSnapshot()">Take Snapshot</button>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <h3>Prediction:</h3>
+        <h2 id="Hand_Gesture_Name"></h2>
+        <h2 id="Hand_Gesture_Emoji"></h2>
+        </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <label>Snapshot</label>
+      <div id="result"></div>
+      <br><br>
+      <button class="btn" style="background-color: goldenrod;" onclick="check(); speak()">Guess Gesture</button>
+    </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
